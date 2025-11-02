@@ -1,50 +1,181 @@
-{
-  "name": "gatsby-starter-contentful-homepage",
-  "version": "1.0.0",
-  "engines": {
-    "node": ">=18.0.0"
+[
+  {
+    "id": "p_sw_001",
+    "name": "Anakin Skywalker",
+    "notes": "The 'Chosen One' of Jedi prophecy, his fall to the dark side as Darth Vader brought the Jedi to ruin. He was ultimately redeemed by his son, Luke. Father of Luke and Leia. Appears in: Episode I (The Phantom Menace), Episode II (Attack of the Clones), Episode III (Revenge of the Sith); (as Darth Vader) Episodes III–VI.",
+    "lifeEvents": [
+      { "id": "e_sw_001a", "personId": "p_sw_001", "type": "Birth", "date": "5533-05-04", "notes": "Born 41 BBY. Earth date is a FamilyMesh app estimation.", "relationships": [{ "personId": "p_sw_007", "role": "Parent" }] },
+      { "id": "e_sw_001b", "personId": "p_sw_001", "type": "Marriage", "date": "5552-05-04", "notes": "Married 22 BBY. Earth date is a FamilyMesh app estimation.", "relationships": [{ "personId": "p_sw_002", "role": "Spouse" }] },
+      { "id": "e_sw_001c", "personId": "p_sw_001", "type": "Childbirth", "date": "5555-05-04", "notes": "Children born 19 BBY. Earth date is a FamilyMesh app estimation.", "relationships": [{ "personId": "p_sw_003", "role": "Child" }, { "personId": "p_sw_004", "role": "Child" }] },
+      { "id": "e_sw_001d", "personId": "p_sw_001", "type": "Death", "date": "5578-05-04", "notes": "Died 4 ABY. Earth date is a FamilyMesh app estimation.", "relationships": [] }
+    ]
   },
-  "scripts": {
-    "start": "gatsby develop",
-    "develop": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "gatsby-provision": "gatsby-provision-contentful --contentful-data-path='./scripts/data.json' --space-id=$CONTENTFUL_SPACE_ID --management-token=$CONTENTFUL_MANAGEMENT_TOKEN",
-    "setup": "node ./scripts/setup.js",
-    "export-content": "contentful space export --space-id=$SPACE_ID --management-token=$MANAGEMENT_TOKEN --export-dir=scripts --content-file=data.json"
+  {
+    "id": "p_sw_002",
+    "name": "Padmé Amidala Naberrie",
+    "notes": "Elected Queen of Naboo at 14, later a Senator who advocated for diplomacy. Secret wife of Anakin; mother of Luke and Leia. Appears in: Episodes I–III.",
+    "lifeEvents": [
+      { "id": "e_sw_002a", "personId": "p_sw_002", "type": "Birth", "date": "5528-05-04", "notes": "Born 46 BBY. Earth date is a FamilyMesh app estimation.", "relationships": [{ "personId": "p_sw_008", "role": "Parent" }, { "personId": "p_sw_009", "role": "Parent" }] },
+      { "id": "e_sw_002b", "personId": "p_sw_002", "type": "Marriage", "date": "5552-05-04", "notes": "Married 22 BBY. Earth date is a FamilyMesh app estimation.", "relationships": [{ "personId": "p_sw_001", "role": "Spouse" }] },
+      { "id": "e_sw_002c", "personId": "p_sw_002", "type": "Childbirth", "date": "5555-05-04", "notes": "Children born 19 BBY. Earth date is a FamilyMesh app estimation.", "relationships": [{ "personId": "p_sw_003", "role": "Child" }, { "personId": "p_sw_004", "role": "Child" }] },
+      { "id": "e_sw_002d", "personId": "p_sw_002", "type": "Death", "date": "5555-05-06", "notes": "Died 19 BBY. Earth date is a FamilyMesh app estimation.", "relationships": [] }
+    ]
   },
-  "dependencies": {
-    "@contentful/rich-text-html-renderer": "^15.11.1",
-    "gatsby-plugin-manifest": "^5.0.0",
-    "gatsby-source-contentful": "^8.0.0",
-    "@fontsource/dm-mono": "^4.5.9",
-    "@fontsource/dm-sans": "^4.5.8",
-    "@vanilla-extract/babel-plugin": "^1.2.0",
-    "@vanilla-extract/css": "^1.9.0",
-    "@vanilla-extract/css-utils": "^0.1.2",
-    "@vanilla-extract/webpack-plugin": "^2.1.12",
-    "gatsby": "^5.0.0",
-    "gatsby-plugin-image": "^3.0.0",
-    "gatsby-plugin-sharp": "^5.0.0",
-    "gatsby-plugin-vanilla-extract": "^4.0.1",
-    "gatsby-source-filesystem": "^5.0.0",
-    "gatsby-transformer-sharp": "^5.0.0",
-    "is-absolute-url": "^4.0.1",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-feather": "^2.0.9",
-    "sharp": "^0.30.5"
+  {
+    "id": "p_sw_003",
+    "name": "Luke Skywalker",
+    "notes": "Farmboy from Tatooine turned Jedi Master; destroyed the first Death Star and helped defeat the Empire. Appears in: Episodes IV–VI, VIII; also IX (cameo/voice).",
+    "lifeEvents": [
+      { "id": "e_sw_003a", "personId": "p_sw_003", "type": "Birth", "date": "5555-05-04", "notes": "Born 19 BBY. Earth date is a FamilyMesh app estimation.", "relationships": [{ "personId": "p_sw_001", "role": "Parent" }, { "personId": "p_sw_002", "role": "Parent" }] },
+      { "id": "e_sw_003b", "personId": "p_sw_003", "type": "Death", "date": "5608-05-04", "notes": "Died 34 ABY. Earth date is a FamilyMesh app estimation.", "relationships": [] }
+    ]
   },
-  "devDependencies": {
-    "chalk": "4",
-    "contentful-cli": "^1.15.3",
-    "contentful-import": "^8.3.2",
-    "gatsby-provision-contentful": "^0.0.5",
-    "inquirer": "^8.2.0",
-    "yargs-parser": "^21.0.0",
-    "prettier": "2.5.1",
-    "husky": "^7.0.4",
-    "lint-staged": "^12.3.5"
+  {
+    "id": "p_sw_004",
+    "name": "Leia Organa",
+    "notes": "Princess of Alderaan, Rebel leader, later General of the Resistance; Force-sensitive twin of Luke. Appears in: Episodes IV–IX.",
+    "lifeEvents": [
+      { "id": "e_sw_004a", "personId": "p_sw_004", "type": "Birth", "date": "5555-05-04", "notes": "Born 19 BBY. Earth date is a FamilyMesh app estimation.", "relationships": [{ "personId": "p_sw_001", "role": "Parent" }, { "personId": "p_sw_002", "role": "Parent" }] },
+      { "id": "e_sw_004b", "personId": "p_sw_004", "type": "Marriage", "date": "5578-05-05", "notes": "Married 4 ABY. Earth date is a FamilyMesh app estimation.", "relationships": [{ "personId": "p_sw_005", "role": "Spouse" }] },
+      { "id": "e_sw_004c", "personId": "p_sw_004", "type": "Childbirth", "date": "5579-05-04", "notes": "Child born 5 ABY. Earth date is a FamilyMesh app estimation.", "relationships": [{ "personId": "p_sw_006", "role": "Child" }] },
+      { "id": "e_sw_004d", "personId": "p_sw_004", "type": "Death", "date": "5609-05-04", "notes": "Died 35 ABY. Earth date is a FamilyMesh app estimation.", "relationships": [] }
+    ]
+  },
+  {
+    "id": "p_sw_005",
+    "name": "Han Solo",
+    "notes": "Corellian smuggler and pilot of the Millennium Falcon; hero of the Rebellion; husband of Leia, father of Ben. Appears in: Episodes IV–VII (and Solo-era cameo in IX memory scene).",
+    "lifeEvents": [
+      { "id": "e_sw_005a", "personId": "p_sw_005", "type": "Birth", "date": "5542-05-04", "notes": "Born 32 BBY. Earth date is a FamilyMesh app estimation.", "relationships": [] },
+      { "id": "e_sw_005b", "personId": "p_sw_005", "type": "Marriage", "date": "5578-05-05", "notes": "Married 4 ABY. Earth date is a FamilyMesh app estimation.", "relationships": [{ "personId": "p_sw_004", "role": "Spouse" }] },
+      { "id": "e_sw_005c", "personId": "p_sw_005", "type": "Childbirth", "date": "5579-05-04", "notes": "Child born 5 ABY. Earth date is a FamilyMesh app estimation.", "relationships": [{ "personId": "p_sw_006", "role": "Child" }] },
+      { "id": "e_sw_005d", "personId": "p_sw_005", "type": "Death", "date": "5608-05-04", "notes": "Died 34 ABY. Earth date is a FamilyMesh app estimation.", "relationships": [] }
+    ]
+  },
+  {
+    "id": "p_sw_006",
+    "name": "Ben Solo",
+    "notes": "Son of Leia and Han; fell to the dark side as Kylo Ren, later redeemed. Appears in: Episodes VII–IX.",
+    "lifeEvents": [
+      { "id": "e_sw_006a", "personId": "p_sw_006", "type": "Birth", "date": "5579-05-04", "notes": "Born 5 ABY. Earth date is a FamilyMesh app estimation.", "relationships": [{ "personId": "p_sw_005", "role": "Parent" }, { "personId": "p_sw_004", "role": "Parent" }] },
+      { "id": "e_sw_006b", "personId": "p_sw_006", "type": "Death", "date": "5609-05-04", "notes": "Died 35 ABY. Earth date is a FamilyMesh app estimation.", "relationships": [] }
+    ]
+  },
+  {
+    "id": "p_sw_007",
+    "name": "Shmi Skywalker",
+    "notes": "Mother of Anakin Skywalker; lived on Tatooine. Appears in: Episode I; (dies offscreen between I–II, appears in II).",
+    "lifeEvents": [
+      { "id": "e_sw_007a", "personId": "p_sw_007", "type": "Birth", "date": "5502-05-04", "notes": "Born 72 BBY. Earth date is a FamilyMesh app estimation.", "relationships": [] },
+      { "id": "e_sw_007b", "personId": "p_sw_007", "type": "Childbirth", "date": "5533-05-04", "notes": "Child born 41 BBY. Earth date is a FamilyMesh app estimation.", "relationships": [{ "personId": "p_sw_001", "role": "Child" }] },
+      { "id": "e_sw_007c", "personId": "p_sw_007", "type": "Death", "date": "5552-05-04", "notes": "Died 22 BBY. Earth date is a FamilyMesh app estimation.", "relationships": [] }
+    ]
+  },
+  {
+    "id": "p_sw_008",
+    "name": "Ruwee Naberrie",
+    "notes": "Father of Padmé Amidala; husband of Jobal. Appears in: Episode II (deleted/extended scenes; referenced in canon).",
+    "lifeEvents": [
+      { "id": "e_sw_008a", "personId": "p_sw_008", "type": "Childbirth", "date": "5528-05-04", "notes": "Child born 46 BBY. Earth date is a FamilyMesh app estimation.", "relationships": [{ "personId": "p_sw_002", "role": "Child" }] }
+    ]
+  },
+  {
+    "id": "p_sw_009",
+    "name": "Jobal Naberrie",
+    "notes": "Mother of Padmé Amidala; wife of Ruwee. Appears in: Episode II (deleted/extended scenes; referenced in canon).",
+    "lifeEvents": [
+      { "id": "e_sw_009a", "personId": "p_sw_009", "type": "Childbirth", "date": "5528-05-04", "notes": "Child born 46 BBY. Earth date is a FamilyMesh app estimation.", "relationships": [{ "personId": "p_sw_002", "role": "Child" }] }
+    ]
+  },
+  {
+    "id": "p_sw_010",
+    "name": "Chewbacca",
+    "notes": "Wookiee warrior from Kashyyyk; Han Solo’s co-pilot and loyal friend. Appears in: Episodes III, IV, V, VI, VII, VIII, IX. Estimated demo-only death to avoid negative age.",
+    "lifeEvents": [
+      { "id": "e_sw_010a", "personId": "p_sw_010", "type": "Birth", "date": "5374-05-04", "notes": "Born 200 BBY. Earth date is a FamilyMesh app estimation.", "relationships": [] },
+      { "id": "e_sw_010b", "personId": "p_sw_010", "type": "Death", "date": "5650-05-04", "notes": "Estimated demo-only death to avoid negative age. Not canon.", "relationships": [] }
+    ]
+  },
+  {
+    "id": "p_sw_011",
+    "name": "Obi-Wan Kenobi",
+    "notes": "Jedi Master; mentor to Anakin and later to Luke; lived in exile as ‘Ben’. Appears in: Episodes I–IV.",
+    "lifeEvents": [
+      { "id": "e_sw_011a", "personId": "p_sw_011", "type": "Birth", "date": "5517-05-04", "notes": "Born 57 BBY. Earth date is a FamilyMesh app estimation.", "relationships": [] },
+      { "id": "e_sw_011b", "personId": "p_sw_011", "type": "Death", "date": "5574-05-04", "notes": "Died 0 BBY. Earth date is a FamilyMesh app estimation.", "relationships": [] }
+    ]
+  },
+  {
+    "id": "p_sw_012",
+    "name": "Sheev Palpatine (Darth Sidious)",
+    "notes": "Dark Lord of the Sith; orchestrated the fall of the Republic and rise of the Empire; returned via cloning. Appears in: Episodes I–III, VI, IX.",
+    "lifeEvents": [
+      { "id":"e_sw_012a", "personId": "p_sw_012", "type": "Birth", "date": "5490-05-04", "notes": "Born 84 BBY. Earth date is a FamilyMesh app estimation.", "relationships": [] },
+      { "id": "e_sw_012b", "personId": "p_sw_012", "type": "Death", "date": "5578-05-04", "notes": "First death on Second Death Star (4 ABY). Earth date is a FamilyMesh app estimation.", "relationships": [] },
+      { "id": "e_sw_012c", "personId": "p_sw_012", "type": "Death", "date": "5609-05-04", "notes": "Final death on Exegol (35 ABY). Earth date is a FamilyMesh app estimation.", "relationships": [] }
+    ]
+  },
+  {
+    "id": "p_sw_013",
+    "name": "Yoda",
+    "notes": "Grand Master of the Jedi Order; trained generations of Jedi and later Luke on Dagobah. Appears in: Episodes I–III, V–VI, VIII.",
+    "lifeEvents": [
+      { "id": "e_sw_013a", "personId": "p_sw_013", "type": "Birth", "date": "4678-05-04", "notes": "Born 896 BBY. Earth date is a FamilyMesh app estimation.", "relationships": [] },
+      { "id": "e_sw_013b", "personId": "p_sw_013", "type": "Death", "date": "5578-05-04", "notes": "Died 4 ABY. Earth date is a FamilyMesh app estimation.", "relationships": [] }
+    ]
+  },
+  {
+    "id": "p_sw_014",
+    "name": "Jabba the Hutt",
+    "notes": "Crime lord of Tatooine; ruled from his palace with an iron (slimy) fist. Appears in: Episode VI (and Special Edition of IV), cameo in I.",
+    "lifeEvents": [
+      { "id": "e_sw_014a", "personId": "p_sw_014", "type": "Birth", "date": "4974-05-04", "notes": "Born c. 600 BBY. Earth date is a FamilyMesh app estimation.", "relationships": [] },
+      { "id": "e_sw_014b", "personId": "p_sw_014", "type": "Death", "date": "5578-05-04", "notes": "Killed by Leia Organa (4 ABY). Earth date is a FamilyMesh app estimation.", "relationships": [] }
+    ]
+  },
+  {
+    "id": "p_sw_015",
+    "name": "R2-D2",
+    "notes": "R2-series astromech droid; brave, resourceful, and a secret historian in a can. Appears in: Episodes I–IX.",
+    "lifeEvents": [
+      { "id": "e_sw_015a", "personId": "p_sw_015", "type": "Activation", "date": "5542-05-04", "notes": "Active c. 32 BBY. Earth date is a FamilyMesh app estimation." }
+    ]
+  },
+  {
+    "id": "p_sw_016",
+    "name": "C-3PO",
+    "notes": "Protocol droid fluent in over six million forms of communication; anxious but loyal companion to R2-D2. Appears in: Episodes I–IX.",
+    "lifeEvents": [
+      { "id": "e_sw_016a", "personId": "p_sw_016", "type": "Activation", "date": "5542-05-04", "notes": "Activated c. 32 BBY. Earth date is a FamilyMesh app estimation." }
+    ]
+  },
+  {
+    "id": "p_sw_017",
+    "name": "Din Djarin (The Mandalorian)",
+    "notes": "Mandalorian bounty hunter and foundling; adoptive father of Grogu; follows the Way. Appears in: The Mandalorian (TV), The Book of Boba Fett (TV). Estimated demo-only death to avoid negative age.",
+    "lifeEvents": [
+      { "id": "e_sw_017a", "personId": "p_sw_017", "type": "Birth", "date": "5546-05-04", "notes": "Born c. 28 BBY. Earth date is a FamilyMesh app estimation.", "relationships": [] },
+      { "id": "e_sw_017b", "personId": "p_sw_017", "type": "Pet", "date": "5555-05-04", "petName": "Rescued as Foundling", "notes": "Rescued by Death Watch (c. 19 BBY). Earth date is a FamilyMesh app estimation.", "relationships": [] },
+      { "id": "e_sw_017c", "personId": "p_sw_017", "type": "Childbirth", "date": "5583-05-04", "notes": "Found Grogu (c. 9 ABY). Earth date is a FamilyMesh app estimation.", "relationships": [{ "personId": "p_sw_018", "role": "Child" }] },
+      { "id": "e_sw_017d", "personId": "p_sw_017", "type": "Childbirth", "date": "5585-05-04", "notes": "Officially adopted Grogu (c. 11 ABY). Earth date is a FamilyMesh app estimation.", "relationships": [{ "personId": "p_sw_018", "role": "Child" }] },
+      { "id": "e_sw_017e", "personId": "p_sw_017", "type": "Death", "date": "5596-05-04", "notes": "Estimated demo-only death to avoid negative age. Not canon.", "relationships": [] }
+    ]
+  },
+  {
+    "id": "p_sw_018",
+    "name": "Grogu (Din Grogu)",
+    "notes": "Force-sensitive child of Yoda’s species; raised at the Jedi Temple, later a Mandalorian foundling adopted by Din Djarin. Appears in: The Mandalorian (TV), The Book of Boba Fett (TV). Estimated demo-only death to avoid negative age.",
+    "lifeEvents": [
+      { "id": "e_sw_018a", "personId": "p_sw_018", "type": "Birth", "date": "5533-05-04", "notes": "Born 41 BBY. Earth date is a FamilyMesh app estimation.", "relationships": [] },
+      { "id": "e_sw_018c", "personId": "p_sw_018", "type": "Death", "date": "6200-05-04", "notes": "Estimated demo-only death to reflect very long-lived species and avoid negative age. Not canon.", "relationships": [] }
+    ]
+  },
+  {
+    "id": "p_demo_guide",
+    "name": "STAR WARS DEMO - Switch View to A-Z to see everyone",
+    "notes": "",
+    "lifeEvents": [
+      { "id": "e_demo_guide_birth", "personId": "p_demo_guide", "type": "Birth", "date": "1990-11-02", "relationships": [] }
+    ]
   }
-}
+]
